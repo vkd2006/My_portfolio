@@ -1,43 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-        <link rel="stylesheet" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <title>Portfolio Website</title>
-    </head>
-    <script src="js/script.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-    <body>
-        <header>
-            <a href="#" class="logo">Vaidehi Daruwale</a>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-            <nav>
-                <a href="#" class="active"> Home</a>
-                <a href="#">Services</a>
-                <a href="#">Skills</a>
-                <a href="#">Education</a>
-                <a href="#">Projects</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-        <section class="home">
-            <div class="home-img">
+    <title>Portfolio Website</title>
+</head>
+
+<body>
+
+<header>
+    <a href="#" class="logo">Vaidehi Daruwale</a>
+
+    <nav>
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+    <div class="home-img">
+        <img src="main.jpeg" alt="Profile Image">
+    </div>
+
+    <div class="home-content">
+        <h1>Hi, It's <span>Vaidehi</span></h1>
+        <h3 class="typing-text">I'm a <span id="typing"></span></h3>
+
+        <p>
+            Computer Engineering undergraduate passionate about software development and AI, currently strengthening skills in Python, web technologies, and DSA through hands-on projects.
+        </p>
+
+        <div class="social-icons">
+
+            <a href="https://www.linkedin.com/in/vaidehi-daruwale-550b3b307?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BGourAlWySQeTqZUwV3sF9Q%3D%3D
+" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/vkd2006" target="_blank"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/vkd2006_" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+
+        <a href="#contact" class="btn">Hire me</a>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+    <div class="content">
+
+        <div class="title">
+            <span>About Me</span>
+        </div>
+
+        <div class="about-details">
+
+            <div class="left">
                 <img src="main.jpeg" alt="">
             </div>
-            <div class="home-content">
-                <h1>Hi, It's <span>Vaidehi</span></h1>
-                <h3 class="typing-text">I'm a <span id="typing"></span></h3>
-                <p>Computer Engineering undergraduate passionate about software development and AI, currently strengthening skills in Python, web technologies, and DSA through hands-on projects.</p>
-                <div class="social-icons">
-                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="#"><i class="fa-brands fa-github"></i></a>
-                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+
+            <div class="right">
+                <div class="topic">
+                    Computer Engineering undergraduate specializing in AI, data analytics, and software development.
                 </div>
-                <a href="#" class="btn">Hire me</a>  
+
+                <p>
+                    Computer Engineering undergraduate specializing in AI and data analytics, with strong skills in Python, C++, and data-driven problem solving, actively building efficient, scalable software solutions and preparing for advanced studies and research-oriented opportunities.
+                </p>
+
+                <div class="button">
+                    <a href="Vkd_resume.pdf" download class="btn">
+                        Download Resume
+                    </a>
+                </div>
             </div>
-        </section>
-    </body>
+
+        </div>
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section class="skills" id="skills">
+    <div class="content">
+
+        <div class="title">
+            <span>My Skills</span>
+        </div>
+
+        <div class="skills-details">
+
+            <div class="text">
+
+                <div class="topic">Technical Skills</div>
+
+                <ul>
+                    <li>Python programming</li>
+                    <li>C++ development</li>
+                    <li>Data analytics</li>
+                    <li>Machine learning fundamentals</li>
+                    <li>Problem solving</li>
+                    <li>Algorithmic thinking</li>
+                    <li>Scalable software design</li>
+                    <li>Debugging and optimization</li>
+                </ul>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+    <div class="content">
+
+        <div class="title">
+            <span>My Projects</span>
+        </div>
+
+        <div class="boxes">
+
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+
+                </div>
+                <div class="topic">Python Projects</div>
+                <p> Basic python projects</p>
+            </div>
+
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-laptop"></i>
+                </div>
+                <div class="topic">Java Projects</div>
+                <p> Basic Java Projects</p>
+            </div>
+
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-desktop"></i>
+                </div>
+                <div class="topic">Portfolio Website</div>
+                <p>Personal responsive portfolio built using HTML, CSS and JavaScript.</p>
+            </div>
+
+            <div class="box">
+                <div class="icon">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="topic">AI Mini Project</div>
+                <p>Implemented basic ML models for classification and prediction tasks.</p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+    <div class="content">
+
+        <div class="title">
+            <span>Contact Me</span>
+        </div>
+
+        <div class="contact-details">
+
+            <div class="text">
+                <div class="topic">Let’s Work Together</div>
+                <p>
+                    Feel free to reach out for collaborations, internship opportunities, or project discussions. I’d love to connect!
+                </p>
+
+                <div class="icons">
+
+                    <div class="row">
+                        <i class="fas fa-envelope"></i>
+                        <span>daruwale.vaidehi@gmail.com</span>
+                    </div>
+
+                    <div class="row">
+                        <i class="fas fa-phone"></i>
+                        <span>+91 7709989860</span>
+                    </div>
+
+                    <div class="row">
+                        <i class="fas fa-location-dot"></i>
+                        <span>India</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- CONTACT FORM -->
+            <form class="contact-form"
+            action="mailto:daruwale.vaidehi@gmail.com"
+            method="post"
+            enctype="text/plain">
+
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="6" required></textarea>
+
+                <button type="submit" class="btn">Send Message</button>
+
+            </form>
+
+        </div>
+
+    </div>
+</section>
+
+
+<!-- JS -->
+<script src="js/script.js"></script>
+
+
+
+</body>
 </html>
